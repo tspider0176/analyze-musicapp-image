@@ -1,3 +1,7 @@
 ## hello-pyocr
-contains provisional program which analyze and extract chars. from single image by using pyocr lib.
+contains provisional program which analyze and extract chars from image of Music App. on iOS by using pyocr lib.
 
+### init
+```
+pip install tesseract-ocr
+```
