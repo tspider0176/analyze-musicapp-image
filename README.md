@@ -4,4 +4,5 @@ contains provisional program which analyze and extract chars from image of Music
 ### init
 ```
 pip install tesseract-ocr
+pip install google
 ```
