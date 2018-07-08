@@ -30,6 +30,7 @@ print("Available languages: %s" % ", ".join(langs))
 
 files = glob.glob("./image/*_cut.jpg")
 
+title_list = []
 for file in files:
     txt = tool.image_to_string(
         Image.open(file),
@@ -37,6 +38,12 @@ for file in files:
         builder=pyocr.builders.TextBuilder()
         )
 
+    title_list.append(txt)
+
     print(txt)
     os.remove(file)
     print("----------")
+
+print(txt)
+
+# Google search
